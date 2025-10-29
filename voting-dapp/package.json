@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx hardhat build",
     "deploy:local": "npx hardhat run --network localhost scripts/deploy.ts",
-    "test-node": "npx hardhat test nodejs",
+    "test-mocha": "npx hardhat test mocha",
     "test-solidity": "npx hardhat test solidity"
   },
   "keywords": [],
