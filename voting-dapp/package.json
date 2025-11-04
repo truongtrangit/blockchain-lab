@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx hardhat build",
-    "deploy:local": "npx hardhat run --network localhost scripts/deploy.ts",
+    "deploy:local": "dotenv -e .env.local -- npx hardhat run --network local scripts/deploy.ts",
     "test-mocha": "npx hardhat test mocha",
     "test-solidity": "npx hardhat test solidity"
   },
@@ -20,6 +20,7 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.18.13",
     "chai": "^5.3.3",
+    "dotenv-cli": "^11.0.0",
     "ethers": "^6.15.0",
     "forge-std": "github:foundry-rs/forge-std#v1.9.4",
     "hardhat": "^3.0.9",
